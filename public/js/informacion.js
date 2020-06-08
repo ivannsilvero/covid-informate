@@ -34,6 +34,5 @@
     };
 
     document.querySelector('#fire').addEventListener('click', disparar);
-    document.querySelector('footer').append(`Sierra Nahuel, Silvero Iván, Sosa Leal Pío - ${ new Date().getFullYear() }`);
 
 })();
