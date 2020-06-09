@@ -781,7 +781,7 @@ am4core.ready(function() {
 
 
     var sizeLabel = container.createChild(am4core.Label);
-    sizeLabel.text = "tamaño máximo de la burbuja *";
+    sizeLabel.text = "tamaño burbuja *";
     sizeLabel.fill = am4core.color("#ffffff");
     sizeLabel.rotation = 90;
     sizeLabel.fontSize = "10px";
@@ -1055,7 +1055,7 @@ am4core.ready(function() {
     var series = { active: activeSeries, confirmed: confirmedSeries, recovered: recoveredSeries, deaths: deathsSeries };
     // add series
     function addSeries(name, color) {
-        let nameSpanish = {"active": "actuales", "confirmed": "confirmados", "recovered": "recuperados", "deaths": "muertos"};
+        let nameSpanish = { "active": "actuales", "confirmed": "confirmados", "recovered": "recuperados", "deaths": "muertos" };
         var series = lineChart.series.push(new am4charts.LineSeries())
         series.dataFields.valueY = name;
         series.dataFields.dateX = "date";

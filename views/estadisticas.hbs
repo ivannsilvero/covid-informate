@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168816381-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-168816381-1');
-    </script>
-    <meta charset="UTF-8" />
-
+{{> head }}
     <title>Estadísticas - Coronavirus</title>
-    <link rel="shortcut icon" href="/imagenes/1.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <!-- amCharts includes -->
 
@@ -51,7 +36,6 @@
 </head>
 
 <body class="animate__animated animate__fadeIn animate__faster">
-    <div class="contenedor">
         {{> header }}
         <div class="flexbox">
             <div id="chartdiv"></div>
