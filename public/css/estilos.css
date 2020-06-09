@@ -9,30 +9,105 @@
 }
 
 header {
-    padding: 100px 0 30px;
+    width: auto;
+    height: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: white;
 }
 
-.con {
-    padding-top: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-.tit {
-    font-weight: bold;
-}
-
-.bg-image {
+header img {
+    width: 20%;
+    margin: 1em;
     position: relative;
-    background: url(../../imagenes/hospital2.jpg);
-    background-size: cover;
-    min-height: 700px;
+    top: 50%;
+    transform: translateY(-90%);
+    float: left;
+}
+
+header nav {
+    width: 20em;
+    height: 3em;
+    position: relative;
+    top: 50%;
+    right: 2em;
+    transform: translateY(-50%);
+    float: right;
+    background-color: white;
+}
+
+header nav ul {
+    list-style: none;
+    background-color: white;
+}
+
+header nav ul li {
+    padding: 1em;
+    display: inline-block;
+    background-color: white;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    background-color: white;
+}
+
+header nav ul li a h5 {
+    color: black;
+    background-color: white;
+}
+
+header nav ul li a h5:hover {
+    padding-bottom: 0.5em;
+    transition: 0.3s;
+    border-bottom: 3px solid rgb(216, 11, 11);
+}
+
+header nav ul li a .border {
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid rgb(216, 11, 11);
+}
+
+.img {
+    width: auto;
+    height: 22em;
+    position: relative;
+    background-image: url(../../imagenes/hospital2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-box-shadow: inset 0px 13px 38px -5px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: inset 0px 13px 38px -5px rgba(0, 0, 0, 0.52);
+    box-shadow: inset 0px 13px 38px -5px rgba(0, 0, 0, 0.52);
+}
+
+.img .introduccion {
+    width: 25em;
+    height: 10em;
+    position: absolute;
+    top: 50%;
+    right: 20em;
+    transform: translateY(-50%);
+}
+
+.img .introduccion .titulo {
+    font-size: 3.5em;
+}
+
+.img .introduccion p {
+    font-size: 1.2em;
+}
+
+.titular {
+    font-weight: bold;
 }
 
 .main {
     width: auto;
     height: 50em;
     position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .main section {
@@ -65,7 +140,6 @@ footer {
     bottom: 0px;
     text-align: center;
     padding: 10px;
-    font-size: medium;
 }
 
 .button {
@@ -101,7 +175,7 @@ footer {
     width: 100%;
     text-align: left;
     border: none;
-    outline: 0;
+    outline: none;
     transition: 0.4s;
     font-size: 30px;
 }
@@ -109,7 +183,6 @@ footer {
 .active,
 .accordion:hover {
     background-color: #ccc;
-    outline: 0;
 }
 
 .panel {
@@ -117,7 +190,6 @@ footer {
     background-color: white;
     display: none;
     overflow: hidden;
-    outline: 0;
 }
 
 .inText {
@@ -129,7 +201,6 @@ footer {
     color: #777;
     float: right;
     margin-left: 5px;
-    outline: 0;
 }
 
 #fire {
