@@ -14,6 +14,7 @@
             telefono.textContent = 'Copiado!';
             telefono.classList.add('exito');
 
+
             setTimeout(() => {
                 telefono.textContent = original;
                 telefono.classList.remove('exito');

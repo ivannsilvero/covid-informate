@@ -37,6 +37,7 @@ p {
 .exito {
     background-color: #4CAF50;
     color: white;
+    pointer-events: none;
 }
 
 .contenedor {
