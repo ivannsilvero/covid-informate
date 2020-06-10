@@ -55,7 +55,7 @@ nav {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1080px) {
     body {
         overflow-x: hidden;
     }
