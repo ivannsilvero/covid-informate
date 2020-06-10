@@ -1,7 +1,42 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+p {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+
+.copy {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.exito {
+    background-color: #4CAF50;
+    color: white;
 }
 
 .contenedor {
@@ -241,4 +276,10 @@ footer {
 #fire:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.anuncio {
+    padding: 1em;
+    background-color: rgb(47, 79, 79);
+    color: white;
 }
