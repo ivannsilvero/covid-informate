@@ -76,7 +76,6 @@ nav {
         z-index: 999;
     }
     .nav-links li {
-        display: none;
         opacity: 0;
     }
     .burger {
