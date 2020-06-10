@@ -60,6 +60,7 @@ nav {
         overflow-x: hidden;
     }
     .nav-links {
+        display: none;
         position: absolute;
         right: 0px;
         height: 100%;
