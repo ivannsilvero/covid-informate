@@ -54,16 +54,6 @@
         margin: 5px;
         transition: all 0.3s ease;
     }
-    
-    @media screen and (max-width:1200px) {
-        .nav-links {
-            width: 100%;
-        }
-        .logo {
-            display: none;
-            opacity: 0;
-        }
-    }
     /*@media screen and (max-width:1080px) {
     body {
         overflow-x: hidden;
@@ -337,4 +327,14 @@
     
     .anuncio {
         color: white;
+    }
+    
+    @media screen and (max-width:1200px) {
+        .nav-links {
+            width: 100%;
+        }
+        .logo {
+            display: none;
+            opacity: 0;
+        }
     }
