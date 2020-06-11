@@ -326,7 +326,9 @@
     }
     
     .anuncio {
-        color: black;
+        color: white;
+        background-color: rgb(47, 79, 79);
+        padding: 1em;
     }
     
     .nav-links {
