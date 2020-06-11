@@ -1,3 +1,4 @@
+// Navbar responsive, no funcionó. Dejo el código de todos modos para usarlo quizás en un futuro
 const navSlide = () => {
     'use strict';
     const burger = document.querySelector('.burger');
