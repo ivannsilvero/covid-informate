@@ -57,7 +57,7 @@
     
     @media screen and (max-width:1200px) {
         .nav-links {
-            width: 80%;
+            width: 100%;
         }
         .logo {
             display: none;
