@@ -329,12 +329,11 @@
         color: white;
     }
     
-    @media screen and (max-width:1200px) {
-        .nav-links {
-            width: 100%;
-        }
-        .logo {
-            display: none;
-            opacity: 0;
-        }
+    .nav-links {
+        width: 100%;
+    }
+    
+    .logo {
+        display: none;
+        opacity: 0;
     }
