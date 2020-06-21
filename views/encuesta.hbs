@@ -1,0 +1,62 @@
+{{> head }}
+<title>Encuestas - Coronavirus</title>
+<link rel="stylesheet" href="/css/estilos.css">
+{{> fuentes }}
+<link rel="stylesheet" href="/css/encuesta.css">
+</head>
+<body>
+    {{> header }}
+<div class="img1"></div>
+<div id="contenedor">
+<hr><br>
+<h2>ENCUESTA: SÍNTOMAS DEL CORONAVIRUS</h2>
+<br><hr><br>
+<form action="/resultado" method="post">
+<h3>¿Tenés fiebre?</h3><br>
+    <input type="checkbox" id="no1" name="nofiebre"> No </input>
+    <br><br>
+    <input type="checkbox" id="si1" name="sifiebre"> Sí, tengo 37°C o más </input>
+    <br><br>
+<h3>¿Percibiste una marcada pérdida del olfato de manera repentina?</h3><br>
+    <input type="checkbox" id="no2" name="nopolfato"> No </input>
+    <br><br>
+    <input type="checkbox" id="si2" name="sipolfato"> Sí </input>
+    <br><br>
+<h3>¿Percibiste una marcada pérdida del gusto? (sabor de la comida) de manera repentina?</h3><br>
+    <input type="checkbox" id="no3" name="nopgusto"> No </input>
+    <br><br>
+    <input type="checkbox" id="si3" name="sipgusto"> Sí  </input>
+    <br><br>
+<h3>¿Tenés tos o dolor de garganta?</h3><br>
+    <input type="checkbox" id="no4" name="notos"> No </input>
+    <br><br>
+    <input type="checkbox" id="si4" name="sitos"> Sí </input>
+    <br><br>
+<h3>¿Tenés dificultades respiratorias o falta de aire?</h3><br>
+    <input type="checkbox" id="no5" name="nodificil"> No </input>
+    <br><br>
+    <input type="checkbox" id="si5" name="sidificil"> Sí </input>
+    <br><br>
+<h3>Si tu situación de salud contempla alguna de las siguientes opciones, seleccioná las que correspondan</h3><br>
+    <input type="checkbox" class="multielec" name="embarazada"> Estoy embarazada </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="cancer"> Tengo, o tuve cáncer </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="diabetes"> Tengo diabetes </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="ehepatica"> Tengo alguna enfermedad hepática </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="renal"> Tengo alguna enfermedad renal crónica </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="respiratoria"> Tengo alguna enfermedad respiratoria </input>
+    <br><br>
+    <input type="checkbox" class="multielec" name="cardiologica"> Tengo alguna enfermedad cardiológica </input>
+    <br><br>
+    <button type="submit"> ENVIAR  </button>
+    </form>
+<br>
+</div>
+<br><br><br>
+<footer></footer>
+<script src="/js/encuesta.js"></script>
+{{> footer }}
