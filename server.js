@@ -16,9 +16,9 @@ const port = process.env.PORT || 3000;
 
 const hbs = require('hbs');
 
-app.use(express.static(__dirname + '../../public'));
+app.use(express.static(__dirname + '/public'));
 
-hbs.registerPartials(__dirname + '../../views/parciales');
+hbs.registerPartials(__dirname + '/views/parciales');
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
