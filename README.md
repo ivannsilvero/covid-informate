@@ -16,6 +16,9 @@ _DEMO_: https://covid-informate.herokuapp.com/
         - Nodemon
         - Express
         - Handlebars
+        - Dotenv
+        - MySQL
+- MariaDB
 - Google Analytics
 - Dashboard de: 
     - https://github.com/amcharts/covid-charts
