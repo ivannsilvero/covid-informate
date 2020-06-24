@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const mysql = require('mysql');
@@ -5,10 +6,10 @@ const mysql = require('mysql');
 app.use(express.urlencoded());
 
 const cnn = mysql.createConnection({
-    host: 'us-cdbr-east-05.cleardb.net',
-    user: 'b9a05a6bce7da2',
-    password: '5590b34d',
-    db: 'heroku_cdd4a21425fff53'
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    db: process.env.DATABASE
 });
 
 const port = process.env.PORT || 3000;
@@ -112,25 +113,8 @@ app.post('/resultado', (req, res) => {
         if(err) return;
         console.log('Conectado con éxito');
         const query = `
-        CREATE IF NOT EXISTS TABLE respuesta (
-            idrespuesta int(11) NOT NULL,
-            fiebre tinyint(1) NOT NULL,
-            olfato tinyint(1) NOT NULL,
-            gusto tinyint(1) NOT NULL,
-            tos tinyint(1) NOT NULL,
-            dificultad tinyint(1) NOT NULL,
-            embarazada tinyint(1) NOT NULL,
-            cancer tinyint(1) NOT NULL,
-            diabetes tinyint(1) NOT NULL,
-            ehepatica tinyint(1) NOT NULL,
-            renal tinyint(1) NOT NULL,
-            respiratoria tinyint(1) NOT NULL,
-            cardiologica tinyint(1) NOT NULL
-          ) 
-        INSERT INTO covid.respuesta 
-        (fiebre, olfato, gusto, tos, dificultad, embarazada, cancer, diabetes, ehepatica, renal, respiratoria, cardiologica)
-        VALUES
-        (${ nofiebre }, ${ nopolfato }, ${ nopgusto }, ${ notos }, ${ nodificil }, ${ embarazada }, ${ cancer }, ${ diabetes }, ${ ehepatica }, ${ renal }, ${ respiratoria }, ${ cardiologica })`;
+        INSERT INTO ${ process.env.DATABASE }.respuesta (fiebre, olfato, gusto, tos, dificultad, embarazada, cancer, diabetes, ehepatica, renal, respiratoria, cardiologica)
+        VALUES (${ nofiebre }, ${ nopolfato }, ${ nopgusto }, ${ notos }, ${ nodificil }, ${ embarazada }, ${ cancer }, ${ diabetes }, ${ ehepatica }, ${ renal }, ${ respiratoria }, ${ cardiologica })`;
            
         cnn.query(query, (err, res) => {
             if (err) {
